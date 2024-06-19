@@ -25,12 +25,5 @@ public class ClienteServicio {
     public void agregarCliente(Cliente cliente){
         this.listaClientes.add(cliente);
     }
-    public void editarCliente(Cliente cliente){
-        int position = -1;
-        for (int i = 0; i < listaClientes.size(); i++) {
-            if(listaClientes.get(i).equals(cliente)){
-                position= i;
-            }
-        }
-    }
+
 }

@@ -21,6 +21,7 @@ public class ArchivoServicio extends Exportador{
         if (!newFile.exists()) {
            newFile.mkdirs();
         }
+
         try {
             int contador = 0;
             FileReader fr = new FileReader(newFile);
@@ -34,11 +35,6 @@ public class ArchivoServicio extends Exportador{
             }
             fr.close();
             br.close();
-            if (comprobar){
-                System.out.println("La palabra existe en el archivo y se encontro: "+ contador+ " veces");
-            } else {
-                System.out.println("La palabra no existe en el archivo");
-            }
         } catch (IOException e) {
             e.printStackTrace();
         }
